@@ -20,4 +20,4 @@ function binarySearch(list, item) {
   return null;
 }
 
-console.log(binarySearch([1, 2, 3, 4, 5], 4))
+console.log(`Array index: ${binarySearch([1, 2, 3, 4, 5], 4)}`)
