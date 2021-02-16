@@ -7,3 +7,11 @@ const fact = (x) => {
 }
 
 console.log(fact(20))
+
+const sumFunc = (arr, i) => {
+  return i === arr.length ? 0 : arr[i] + sumFunc(arr, i + 1);
+}
+
+const arrNums = [1, 2, 3, 4, 5]
+
+console.log('Summ:', sumFunc(arrNums, 0))
