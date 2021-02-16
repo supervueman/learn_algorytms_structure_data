@@ -15,3 +15,11 @@ const sumFunc = (arr, i) => {
 const arrNums = [1, 2, 3, 4, 5]
 
 console.log('Summ:', sumFunc(arrNums, 0))
+
+const elemCount = (arr, i = 0) => {
+  return arr[i] ? elemCount(arr, i + 1) : i;
+}
+
+const arrNumsElemCount = [1, 2, 3, 4, 5]
+
+console.log('Elem count:', elemCount(arrNumsElemCount));
