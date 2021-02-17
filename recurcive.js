@@ -28,6 +28,6 @@ const maxNum = (arr, i = 0) => {
   return arr[i] && arr[i] < arr[i + 1] ? maxNum(arr, i + 1) : arr[i];
 };
 
-const arrNumsMaxNum = [1, 2, 10, 4, 5];
+const arrNumsMaxNum = [1, 2, 10, 11, 5];
 
 console.log('Max num:', maxNum(arrNumsMaxNum));
